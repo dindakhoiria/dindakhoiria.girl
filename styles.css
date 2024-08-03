@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    width: 100%;
+    max-width: 800px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#theme-toggle {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+main {
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.intro {
+    padding: 2em 1em;
+}
+
+.intro-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.intro-text {
+    margin-right: 20px;
+}
+
+.intro-text h2 {
+    margin: 0;
+    text-align: left;
+}
+
+.intro-text p {
+    text-align: left;
+}
+
+.intro-image img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.bio {
+    padding: 1em;
+    margin-top: 1em;
+    text-align: left;
+}
+
+.bio h3 {
+    margin-top: 0;
+}
+
+.interests {
+    padding: 1em;
+    margin-top: 1em;
+}
+
+.interests h3 {
+    margin-top: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .intro-content {
+        flex-direction: column;
+    }
+
+    .intro-text {
+        margin-right: 0;
+        margin-bottom: 1em;
+    }
+}
+
+.light-theme {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.light-theme header {
+    background-color: #f0f0f0;
+}
+
+.light-theme .bio, .light-theme .interests {
+    background-color: #f0f0f0;
+}
+
+.light-theme .button {
+    background-color: #0984e3;
+}

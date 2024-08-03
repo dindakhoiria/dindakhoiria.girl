@@ -1,75 +1,57 @@
 <!DOCTYPE html>
-<html lang="id">
-
+<html lang="en">
 <head>
-    <meta name="google-site-verification" content="hTSEgrzIKupQr9Ed4W8O9wpVSevQteUST_giKpZdBdw" />
-    <meta name="msvalidate.01" content="69F30B6CF7C799C59DE89EB81E6EE067" />
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-        rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-        crossorigin="anonymous">
-    <title>Home | Dinda Khoiria</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinda Khoiria</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
-<style type="text/css">
-    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-    body {
-        font-family: 'Press Start 2P', cursive;
-    }
-
-    div {
-        font-size: 20px;
-    }
-</style>
-
-<body style="background-color: #000;" oncontextmenu="return false;">
-    <div class="d-flex align-items-center justify-content-center vh-100">
-        <div>
-            <img src="image.png" class="h-auto mx-auto d-block" width="200px" alt="Dinda Khoiria">
-            <div class="text-center p-2 user-select-none">
-                <div class="h1 fw-bold" style="color:#00FF41; font-size: 24px;" id="Numbers">Dinda Khoiria</div>
-            </div>
-            <div style="border-style:solid; border-color:#00FF41; border-width:2px;"></div>
-            <div class="d-flex justify-content-center my-4">
-                <div class="d-flex flex-column fs-5">
-                    <div class="d-inline-flex p-2 mx-auto">
-                        <a href="https://web.facebook.com/dinda.khoiria?mibextid=ZbWKwL&_rdc=1&_rdr"
-                            style="text-decoration: none; color: #00FF41; cursor: pointer;"
-                            onmouseover="new Audio('mixkit-arcade-game-jump-coin-216.wav').play(); this.innerHTML='&#129030; Facebook &#129028;'"
-                            onmouseout="this.innerHTML='Facebook'"
-                            onclick="new Audio('mixkit-arcade-game-jump-coin-216.wav').play();">
-                            Facebook
-                        </a>
-                    </div>                 
-                    <div class="d-inline-flex p-2 mx-auto"><a href="https://id.quora.com/profile/Dinda-Khoiria"
-                            style="text-decoration:none; color:#00FF41;"
-                            onmouseover="new Audio('mixkit-arcade-game-jump-coin-216.wav').play(); this.innerHTML='&#129030; Quora &#129028;'"
-                            onmouseout="this.innerHTML='Quora'"
-                            onclick="new Audio('mixkit-arcade-game-jump-coin-216.wav').play();"
-                            data-bs-toggle="modal" data-bs-target="#MastodonModal">Quora</a></div>
-                    <div class="d-inline-flex p-2 mx-auto"><a href="https://www.linkedin.com/in/dinda-khoiria-a8205a1a2/"
-                            style="text-decoration:none; color:#00FF41;"
-                            onmouseover="new Audio('mixkit-arcade-game-jump-coin-216.wav').play(); this.innerHTML='&#129030; LinkedIn &#129028;'"
-                            onmouseout="this.innerHTML='LinkedIn'"
-                            onclick="new Audio('mixkit-arcade-game-jump-coin-216.wav').play();"
-                            data-bs-toggle="modal" data-bs-target="#LinkedInModal">LinkedIn</a></div>
-                    <div class="d-inline-flex p-2 mx-auto"><a href="https://www.kaskus.co.id/@dindakhy?ref=header&med=profile_menu" style="text-decoration:none; color:#00FF41;"
-                            onmouseover="new Audio('mixkit-arcade-game-jump-coin-216.wav').play(); this.innerHTML='&#129030; Kaskus &#129028;'"
-                            onmouseout="this.innerHTML='Kaskus'"
-                            onclick="new Audio('mixkit-arcade-game-jump-coin-216.wav').play();"
-                            data-bs-toggle="modal" data-bs-target="#TonexModal">Kaskus</a></div>
-                    <div class="d-inline-flex p-2 mx-auto"><a href="https://medium.com/@dindakhoiria" style="text-decoration:none; color:#00FF41;"
-                            onmouseover="new Audio('mixkit-arcade-game-jump-coin-216.wav').play(); this.innerHTML='&#129030; Medium &#129028;'"
-                            onmouseout="this.innerHTML='Medium'"
-                            onclick="new Audio('mixkit-arcade-game-jump-coin-216.wav').play();"
-                            data-bs-toggle="modal" data-bs-target="#BlogModal">Medium</a></div>
+<body>
+    <header>
+        <div class="logo">
+            <img src="image.png" alt="Dinda Khoiria">
+            <h1>Dinda Khoiria</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Works</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="#">Source</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle">🌞</button>
+    </header>
+    <main>
+        <section class="intro">
+            <p>Hello, I'm a Blogger based in Surabaya!</p>
+            <div class="intro-content">
+                <div class="intro-text">
+                    <h2>Dinda Khoiria</h2>
+                    <h3>Operator - Blogger</h3>
+                    <p>Hello! I am Dinda Khoiria, a Pharmacy Vocational School graduate currently studying Information Systems at the Open University of Surabaya. With 2 years of experience in the pharmaceutical industry and as a production operator, I have developed strong communication skills, attention to detail, operational efficiency, and teamwork. Additionally, I work part-time as a freelance copywriter and SEO optimizer, creating creative and persuasive content for various client projects, combining pharmaceutical expertise with information technology to provide relevant and engaging content.</p>
+                </div>
+                <div class="intro-image">
+                    <img src="image.png" alt="Dinda Khoiria">
                 </div>
             </div>
-            <div style="border-style:solid; border-color:#00FF41; border-width:2px;"></div>
-        </div>
-    </div>
-    <!-- Tambahkan modals dan konten lainnya di sini -->
+        </section>
+        <section class="bio">
+            <h3>Bio</h3>
+            <ul>
+                <li><strong>2001</strong> Born in Bangkalan, Indonesia.</li>
+                <li><strong>2019</strong> Graduated from Senior High School, Surabaya, Indonesia.</li>
+                <li><strong>2022 to present</strong> Student of Universitas Terbuka Surabaya.</li>
+                <li><strong>2022 to present</strong> Worked at Sprint Indonesia.</li>
+            </ul>
+        </section>
+        <section class="interests">
+            <h3>Hobby</h3>
+            <p>Music, Reading, Photography</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 @dindakhy. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
-
 </html>
