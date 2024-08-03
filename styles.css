@@ -30,20 +30,41 @@ header {
     margin-right: 10px;
 }
 
+nav {
+    position: relative;
+}
+
 nav ul {
     list-style: none;
-    display: flex;
+    display: none; /* Hide the menu by default for mobile */
+    flex-direction: column; /* Stack menu items vertically */
     margin: 0;
     padding: 0;
+    background-color: #444;
+    position: absolute;
+    top: 60px; /* Positioning under the header */
+    right: 0;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 nav ul li {
-    margin: 0 10px;
+    border-bottom: 1px solid #555;
+}
+
+nav ul li:last-child {
+    border-bottom: none;
 }
 
 nav ul li a {
     color: #ffffff;
     text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #555;
 }
 
 #theme-toggle {
@@ -54,10 +75,20 @@ nav ul li a {
     cursor: pointer;
 }
 
+#menu-toggle {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1.5em;
+    cursor: pointer;
+    display: inline-block;
+}
+
 main {
     text-align: center;
     width: 100%;
     max-width: 800px;
+    padding: 20px;
 }
 
 .intro {
@@ -117,6 +148,9 @@ footer {
 @media (max-width: 600px) {
     nav ul {
         flex-direction: column;
+        width: 100%;
+        top: 50px;
+        right: 0;
     }
 
     .intro-content {
@@ -126,6 +160,19 @@ footer {
     .intro-text {
         margin-right: 0;
         margin-bottom: 1em;
+    }
+}
+
+@media (min-width: 768px) {
+    nav ul {
+        display: flex; /* Show the menu on larger screens */
+        position: static;
+        flex-direction: row;
+        background-color: transparent;
+    }
+
+    #menu-toggle {
+        display: none; /* Hide the toggle button on larger screens */
     }
 }
 
