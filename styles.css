@@ -18,20 +18,23 @@ header {
     padding: 1em;
     width: 100%;
     max-width: 800px;
+    box-sizing: border-box;
 }
 
 .logo {
     display: flex;
     align-items: center;
+    white-space: nowrap; /* Prevent wrapping */
 }
 
-.logo img {
-    width: 50px;
-    margin-right: 10px;
+.logo h1 {
+    margin: 0;
+    font-size: 1.5em; /* Adjust font size as needed */
 }
 
 nav {
     position: relative;
+    width: 100%;
 }
 
 nav ul {
@@ -42,11 +45,12 @@ nav ul {
     padding: 0;
     background-color: #444;
     position: absolute;
-    top: 50px; /* Positioning under the header */
+    top: 100%; /* Positioning under the header */
     right: 0;
     border-radius: 5px;
     overflow: hidden;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    width: 100%; /* Take full width on mobile */
+    box-sizing: border-box;
 }
 
 nav ul.show {
@@ -154,11 +158,10 @@ footer {
     color: #808080; /* Warna abu-abu */
 }
 
-
 @media (max-width: 600px) {
     nav ul {
         flex-direction: column;
-        width: 100%;
+        width: 100%; /* Full width */
         top: 50px;
         right: 0;
     }
@@ -179,7 +182,6 @@ footer {
         position: static;
         flex-direction: row;
         background-color: transparent;
-        box-shadow: none;
     }
 
     #menu-toggle {

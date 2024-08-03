@@ -1,4 +1,3 @@
-// script.js
 // Toggle between dark and light theme
 document.getElementById('theme-toggle').addEventListener('click', () => {
     document.body.classList.toggle('light-theme');
